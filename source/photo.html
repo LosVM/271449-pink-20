@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img src="#" width="#" height="#" alt="Pink logo">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle"></button>
+        <div class="main-nav__wrapper">            
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a>
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+        <h1 class="page-main__header">Фотографии пользователей</h1>
+
+        <section class="gallery">
+          <h2 class="visually-hidden">Галерея</h2>
+          <div class="gallery__wrapper">
+            <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
+            <!-- <div class="gallery__best-picture"> 
+              <img src="#" width="#" height="#" alt="Фото дня">
+              <div class="best-picture__info">
+                <h3 class="best-picture__author">
+                  Анна <span>(5 минут назад)</span>
+                </h3>
+                <p class="best-picture__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="likes">Нравится: 215</div>
+              </div>
+            </div>-->
+
+            <ul class="gallery__list">
+              <li class="gallery__item gallery__item--picture-of-the-day">
+                <a href="#" class="gallery__picture">
+                  <img src="#" width="#" height="#" alt="Фото дня">
+                </a>
+                <div class="gallery__info">
+                  <h3 class="gallery__user-name">
+                    Анна<span>(5 минут назад)</span>
+                  </h3>
+                  <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <button class="gallery__likes-button" type="button">Нравится: 215</button>
+                </div>
+              </li>
+
+              <li class="gallery__item">
+                <a class="gallery__picture">
+                  <img src="#" width="#" height="#" alt="Фотография пользователя">
+                </a>
+                <div class="gallery__info">
+                  <h3 class="gallery__user-name">
+                    Левон<span>(5 часов назад)</span>
+                  </h3>
+                  <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <button class="gallery__likes-button" type="button">Нравится: 356</button>
+                </div>
+              </li>
+
+              <li class="gallery__item">
+                <a href="#" class="gallery__picture">
+                  <img src="#" width="#" height="#" alt="Фотография пользователя">
+                </a>
+                <div class="gallery__info">
+                  <h3 class="gallery__user-name">
+                    Антон<span>(12 часов назад)</span>
+                  </h3>
+                  <p class="gallery__text">Соседи будут рады!</p>
+                  <button class="gallery__likes-button" type="button">Нравится: 666</button>
+                </div>
+              </li>
+
+              <li class="gallery__item">
+                <a href="#" class="gallery__picture">
+                  <img src="#" width="#" height="#" alt="Фотография пользователя">
+                </a> 
+                <div class="gallery__info">
+                  <h3 class="gallery__user-name">
+                    Борис<span>(20 часов назад)</span>
+                  </h3>
+                  <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <button class="gallery__likes-button" type="button">Нравится: 215</button>
+                </div>
+              </li>
+
+              <li class="gallery__item">
+                <a href="#" class="gallery__picture">
+                  <img src="#" width="#" height="#" alt="Фотография пользователя">
+                </a>
+                <div class="gallery__info">
+                  <h3 class="gallery__user-name">
+                    Сергей<span>(25 часов назад)</span>
+                  </h3>
+                  <p class="gallery__text">Самая кубанская в мире!</p>
+                  <button class="gallery__likes-button" type="button">Нравится: 4</button>
+                </div>
+              </li>
+
+              <li class="gallery__item">
+                <a href="#" class="gallery__picture">
+                  <img src="#" width="#" height="#" alt="Фотография пользователя">
+                </a>
+                <div class="gallery__info">
+                  <h3 class="gallery__user-name">
+                    Максим<span>(40 часов назад)</span>
+                  </h3>
+                  <p class="gallery__text">Где снег-то?</p>
+                  <button class="gallery__likes-button" type="button">Нравится: 150</button>
+                </div>
+              </li>
+
+              <li class="gallery__item">
+                <a href="#" class="gallery__picture">
+                  <img src="#" width="#" height="#" alt="Фотография пользователя">
+                </a>
+                <div class="gallery__info">
+                  <h3 class="gallery__user-name">
+                    Надежда<span>(45 часов назад)</span>
+                  </h3>
+                  <p class="gallery__text">Всем GM и взаимные лайки!</p>
+                  <button class="gallery__likes-button" type="button">Нравится: 2560</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="upload-picture">
+          <h2 class="visually-hidden">Загрузка и обработка фотографий</h2>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="index.html" class="page-footer__logo">
+          <img src="#" width="#" height="#" alt="Pink Logo">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">Twitter
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">Facebook
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">Youtube
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
