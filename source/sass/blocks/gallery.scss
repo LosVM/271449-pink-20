@@ -1,0 +1,132 @@
+.gallery {    
+    color: #283645;    
+}
+
+/*
+.gallery__wrapper {
+    margin: 0 auto;
+}
+*/
+
+.gallery__slogan {
+    padding-top: 54px;
+    padding-bottom: 60px;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    text-align: center;
+}
+
+.gallery__list {
+    @include list-reset;    
+
+    position: relative;    
+}
+
+.gallery__item {    
+    position: relative;
+
+    width: 280px;
+
+    margin: 0px 20px 20px 20px;
+
+    background-color: #F2F2F2;   
+
+
+    &--picture-of-the-day::after {
+        content: "Панорма дня";
+       
+        position: absolute;
+        background-color: #D22856;
+
+        // width: 140px;
+        // height: 36px;
+        top: 0;
+        right: 5px;
+
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+       
+        padding: 13px 20px 14px 19px;
+    } 
+}
+
+.gallery__item--picture-of-the-day {
+    a {
+        margin-left: -20px;
+    }    
+}
+
+.gallery__info {    
+    padding: 0 17px 25px 17px;
+
+    font-size: 14px;
+}
+
+.gallery__user-name {    
+    font-weight: bold;
+
+    span {
+        font-size: 12px;
+        text-transform: uppercase;        
+        font-weight: lighter;
+    }
+}
+
+.gallery__text {
+    line-height: 24px;
+}
+
+.gallery__likes-button {
+    position: relative;
+
+    font-size: 12px;
+    color: #D22856;
+
+    border: none;
+    cursor: pointer;
+
+    padding-left: 35px;
+
+    &::before {
+        content: "";
+
+        width: 13px;
+        height: 12px;
+
+        position: absolute;
+
+        top: 2px;
+        left: 5px;
+
+        background-image: url("../../img/icon-heart.svg");
+        fill: #D22856;
+        // stroke: #D22856;
+    }
+}
+
+/*
+.gallery__item--picture-of-the-day::after {
+    content: "Панорма дня";
+
+    position: absolute;
+    background-color: #D22856;
+
+    // width: 140px;
+    // height: 36px;
+    top: 0;
+    right: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    // text-align: center;
+    // vertical-align: middle;
+    padding: 13px 20px 14px 19px;
+}
+*/

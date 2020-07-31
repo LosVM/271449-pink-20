@@ -1,0 +1,36 @@
+.main-nav {
+    display: flex;  
+    position: relative;    
+}
+
+.main-nav__toggle {   
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    
+    top: -50px;    
+    right: 10px;
+}
+
+.main-nav__wrapper {
+    margin: 0 auto;    
+}
+
+.main-nav__list {
+    @include list-reset;    
+}
+
+.main-nav__item  {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    text-align: center;
+
+    a {        
+        font-weight: bold;
+        font-size: 18px;
+        // text-decoration: none;
+        color: #FFFFFF;
+    }
+}
