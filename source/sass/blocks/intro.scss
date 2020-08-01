@@ -1,10 +1,10 @@
 .intro {    
-    background-color: #1D2631;
+    background-color: $intro-dark-bg;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 100% 405px;
 
-    color: #FFFFFF;
+    color: $white-color;
     text-align: center;
 }
 
@@ -17,10 +17,9 @@
     margin: 0;
     padding: 29px 25px 34px 25px; 
 
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 24px;
     text-align: center;
-    // color: #ffffff;
 }
 
 .intro__image {
@@ -32,12 +31,12 @@
     padding: 21px 39px;
     margin-bottom: 32px;
 
-    color: #ffffff;
+    color: $white-color;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;    
 
-    border: 3px solid #FFFFFF;
+    border: 3px solid $white-color;
     border-radius: 40px;
 }
 
@@ -57,5 +56,5 @@
 
     font-size: 14px;
     line-Height: 24px;
-    font-weight: lighter;
+    font-weight: 300;
 }

@@ -1,6 +1,9 @@
-@import "blocks/variabless.scss";
-@import "blocks/global.scss";
+@import "variabless.scss";
+@import "global.scss";
 @import "mixins.scss";
+@import "normalize.scss";
+
+// index page
 
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";

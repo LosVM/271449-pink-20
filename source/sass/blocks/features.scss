@@ -1,22 +1,5 @@
-.features {   
-    // background-color: #FFFFFF;
-
-    background: url("../img/grey-bg.png") no-repeat;
-    background-position: center;
-    // background-size: 1450px;
-}
-
 .features__wrapper {
-    text-align: center;
-    /*
-
-    &::after {
-        content: "";
-
-        position: absolute;
-       
-        background: url("../../img/grey-bg.png") no-repeat;        
-    }*/
+    text-align: center;    
 }
 
 .features__slogan,
@@ -32,11 +15,9 @@
     padding-bottom: 123px;
 }
 
-.features__list {
-    // background: linear-gradient(51deg, transparent 63%, #F2F2F2 0);
-   
+.features__list {   
     @include list-reset;
-    // padding-top: 120px;
+
     padding-bottom: 48px;
 }
 
@@ -48,7 +29,7 @@
 .features__title {
     font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .features__text {

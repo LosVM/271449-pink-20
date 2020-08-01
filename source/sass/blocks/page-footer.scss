@@ -18,19 +18,15 @@
     padding: 0px 74px 41px 74px; 
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
+}
 
-    .social__item {
-        width: 48px;
-        height: 48px;
-
-        // border: 3px solid #283645;
-        // border-radius: 50%;
-        // opacity: 0.1;
-    }
-
-    .social__item svg {
-        fill: #D22856;
+.social__item {
+    width: 48px;
+    height: 48px;
+    
+    svg {
+        fill: $pink-color;
     }
 }
 

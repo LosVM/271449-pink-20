@@ -1,5 +1,6 @@
 .main-nav {
-    display: flex;  
+    display: flex;
+    
     position: relative;    
 }
 
@@ -9,7 +10,7 @@
     border: none;
     outline: none;
     
-    top: -50px;    
+    top: -50px;
     right: 10px;
 }
 
@@ -28,10 +29,9 @@
     text-align: center;
 
     a {        
-        font-weight: bold;
-        font-size: 18px;
-        // text-decoration: none;
-        color: #FFFFFF;
-        text-transform: uppercase;      
+        font-weight: 700;
+        font-size: 18px;        
+        color: $white-color;
+        text-transform: uppercase;
     }
 }
