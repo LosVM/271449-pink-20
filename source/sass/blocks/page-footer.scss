@@ -1,4 +1,4 @@
-.page-footer {   
+.page-footer {
     text-align: center;
 }
 
@@ -9,22 +9,20 @@
 
 .page-footer__logo {
     padding-top: 40px;
-    padding-bottom: 41px;    
+    padding-bottom: 41px;
 }
 
 .page-footer__social {
     @include list-reset;
-
-    padding: 0px 74px 41px 74px; 
-
+    padding: 0px 74px 41px 74px;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 .social__item {
     width: 48px;
     height: 48px;
-    
+
     svg {
         fill: $pink-color;
     }
@@ -33,13 +31,11 @@
 .page-footer__copyright {
     display: flex;
     align-items: center;
-
     padding: 0px 95px 40px 95px;
-
     font-size: 14px;
 
     .copyright__link {
         width: 27px;
-        height: 34px;       
+        height: 34px;
     }
 }

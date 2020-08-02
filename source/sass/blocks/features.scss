@@ -1,5 +1,5 @@
 .features__wrapper {
-    text-align: center;    
+    text-align: center;
 }
 
 .features__slogan,
@@ -7,7 +7,6 @@
     font-size: 24px;
     line-height: 29px;
     font-weight: 300;
-
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -16,15 +15,14 @@
     padding-bottom: 123px;
 }
 
-.features__list {   
+.features__list {
     @include list-reset;
-
     padding-bottom: 48px;
 }
 
 .features__item {
     padding-left: 20px;
-    padding-right: 20px;   
+    padding-right: 20px;
 }
 
 .features__title {

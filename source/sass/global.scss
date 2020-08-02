@@ -1,53 +1,16 @@
-@font-face {
-    font-family: "Open Sans";
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    src: 
-        url("../../fonts/opensans.woff") format("woff"),
-        url("../../fonts/opensans.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "Open Sans";
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-    src:
-        url("../../fonts/opensansbold.woff") format("woff"),
-        url("../../fonts/opensansbold.woff2") format("wolf2");
-}
-
-@font-face {
-    font-family: "Open Sans";
-    font-weight: light;
-    font-style: normal;
-    font-display: swap;
-    src:
-        url("../../fonts/opensanslight.woff") format("woff"),
-        url("../../fonts/opensanslight.woff2") format("woff2");
-}
-
 .visually-hidden {
     position: absolute;
-
     overflow: hidden;
     clip: rect(0 0 0 0);
-
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
-
     border: 0;
 }
 
 body {
-    width: $mobile-width;
-
-    margin: 0 auto;
-
-    font-family: Open Sans;    
+    font-family: "Open Sans", "Arial", sans-serif;
 }
 
 a {
