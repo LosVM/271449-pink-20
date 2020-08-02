@@ -1,83 +1,82 @@
 .gallery {
-    color: $dark-blue-color;
+  color: $dark-blue-color;
 }
 
 .gallery__slogan {
-    padding-top: 54px;
-    padding-bottom: 60px;
-    margin: 0;
-    font-size: 14px;
-    line-height: 30px;
-    text-align: center;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .gallery__list {
-    @include list-reset;
-    position: relative;
+  @include list-reset;
+  position: relative;
 }
 
 .gallery__item {
-    position: relative;
-    width: 280px;
-    margin: 0px 20px 20px 20px;
-    background-color: $gray-color;
+  position: relative;
+  width: 280px;
+  margin: 0 20px 20px 20px;
+  background-color: $gray-color;
 
-    &--picture-of-the-day {
-        &::after {
-            content: "Панорма дня";
-            position: absolute;
-            background-color: $pink-color;
-            top: 0;
-            right: 5px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: $white-color;
-            padding: 13px 20px 14px 19px;
-        }
+  &--picture-of-the-day {
+    &::after {
+      content: "Панорма дня";
+      position: absolute;
+      background-color: $pink-color;
+      top: 0;
+      right: 5px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $white-color;
+      padding: 13px 20px 14px 19px;
     }
-
+  }
 }
 
 .gallery__picture {
-    display: block;
+  display: block;
 }
 
 .gallery__info {
-    padding: 0 17px 25px 17px;
-    font-size: 14px;
+  padding: 0 17px 25px 17px;
+  font-size: 14px;
 }
 
 .gallery__user-name {
-    font-weight: 700;
+  font-weight: 700;
 
-    span {
-        font-size: 12px;
-        text-transform: uppercase;
-        font-weight: 300;
-    }
+  span {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
 }
 
 .gallery__text {
-    line-height: 24px;
+  line-height: 24px;
 }
 
 .gallery__likes-button {
-    position: relative;
-    font-size: 12px;
-    color: $pink-color;
-    border: none;
-    cursor: pointer;
-    padding-left: 35px;
+  position: relative;
+  font-size: 12px;
+  color: $pink-color;
+  border: none;
+  cursor: pointer;
+  padding-left: 35px;
 
-    &::before {
-        content: "";
-        width: 13px;
-        height: 12px;
-        position: absolute;
-        top: 2px;
-        left: 5px;
-        background-image: url("../img/icon-heart.svg");
-        fill: $pink-color;
-    }
+  &::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    background-image: url("../img/icon-heart.svg");
+    fill: $pink-color;
+  }
 }
