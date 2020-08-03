@@ -1,0 +1,37 @@
+.features__wrapper {
+  text-align: center;
+}
+
+.features__slogan,
+.features__offer {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.features__offer {
+  padding-bottom: 123px;
+}
+
+.features__list {
+  @include list-reset;
+  padding-bottom: 48px;
+}
+
+.features__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.features__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 24px;
+}

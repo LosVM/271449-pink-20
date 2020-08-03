@@ -1,0 +1,53 @@
+.intro {
+  background-color: $intro-dark-bg;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 405px;
+  color: $white-color;
+  text-align: center;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 29px 25px 34px 25px;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.intro__image {
+  padding-bottom: 28px;
+  text-align: left;
+}
+
+.intro__download-link {
+  padding: 21px 39px;
+  margin-bottom: 32px;
+  color: $white-color;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid $white-color;
+  border-radius: 40px;
+}
+
+.intro__list {
+  @include list-reset;
+  padding: 0 58px 30px 58px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.intro__text {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+}
