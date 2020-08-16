@@ -39,3 +39,17 @@
     height: 34px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    width: $tablet-width;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width;
+  }
+}

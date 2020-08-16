@@ -11,3 +11,17 @@
   height: 23px;
   padding: 21px 0 21px 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    width: $desktop-width;
+  }
+}

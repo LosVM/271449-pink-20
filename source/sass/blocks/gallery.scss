@@ -80,3 +80,26 @@
     fill: $pink-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    width: $tablet-width;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item {
+    &--picture-of-the-day {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    width: $desktop-width;
+  }
+}

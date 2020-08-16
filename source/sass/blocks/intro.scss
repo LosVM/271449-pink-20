@@ -26,6 +26,7 @@
 }
 
 .intro__download-link {
+  width: 222px;
   padding: 21px 39px;
   margin-bottom: 32px;
   color: $white-color;
@@ -50,4 +51,46 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    width: $tablet-width;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .intro__wrapper {
+    position: relative;
+  }
+
+  .intro__title {
+    width: 200px;
+    font-size: 40px;
+  }
+
+  .intro__image {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+  }
+
+  .intro__download-link {
+    z-index: 2;
+  }
+
+  .intro__list {
+    width: 210px;
+  }
+
+  .intro__text {
+    width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    width: $desktop-width;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }
