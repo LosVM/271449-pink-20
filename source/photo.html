@@ -8,13 +8,14 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header__wrapper container">
       <a href="index.html">
-        <img class="page-header__logo" src="../img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink logo">
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink logo">
       </a>
 
       <nav class="main-nav">
         <button class="main-nav__toggle">
-          <img src="../img/icon-menu-burger.svg" width="50" height="24" alt="Burger menu">
+          <img src="img/icon-menu-burger.svg" width="50" height="24" alt="Burger menu">
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -41,104 +42,135 @@
           </ul>
         </div>
       </nav>
+    </div>
     </header>
 
     <main class="page-main">
-        <h1 class="page-main__header">Фотографии пользователей</h1>
+      <div class="page-main__header">
+        <h1 class="page-main__wrapper container">Фотографии пользователей</h1>
+      </div>
 
         <section class="gallery">
           <h2 class="visually-hidden">Галерея</h2>
-          <div class="gallery__wrapper">
+          <div class="gallery__wrapper container">
             <p class="gallery__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
             <ul class="gallery__list">
-              <li class="gallery__item gallery__item--picture-of-the-day">
-                <a href="#" class="gallery__picture">
-                  <img src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото дня">
+              <li class="gallery__item gallery__item--max">
+                <a href="#" class="gallery__picture ">
+                  <img class="max" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото дня">
                 </a>
                 <div class="gallery__info">
-                  <h3 class="gallery__user-name">
+                  <p class="gallery__user-name">
                     Анна<span>(5 минут назад)</span>
-                  </h3>
+                  </p>
                   <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                  <button class="gallery__likes-button" type="button">Нравится: 215</button>
+                  <!-- <button class="gallery__likes-button" type="button">Нравится: 215</button> -->
+                  <span class="gallery__likes likes likes__big">
+                    Нравится: 215
+                    <button class="likes__button" type="button"></button>
+                  </span>
                 </div>
               </li>
 
               <li class="gallery__item">
                 <a class="gallery__picture">
-                  <img src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+                  <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
                 </a>
                 <div class="gallery__info">
-                  <h3 class="gallery__user-name">
+                  <p class="gallery__user-name">
                     Левон<span>(5 часов назад)</span>
-                  </h3>
+                  </p>
                   <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                  <button class="gallery__likes-button" type="button">Нравится: 356</button>
+                  <!-- <button class="gallery__likes-button" type="button">Нравится: 356</button> -->
+                  <span class="gallery__likes likes">
+                    Нравится: 356
+                    <button class="likes__button" type="button"></button>
+                  </span>
                 </div>
               </li>
 
               <li class="gallery__item">
                 <a href="#" class="gallery__picture">
-                  <img src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+                  <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
                 </a>
                 <div class="gallery__info">
-                  <h3 class="gallery__user-name">
+                  <p class="gallery__user-name">
                     Антон<span>(12 часов назад)</span>
-                  </h3>
+                  </p>
                   <p class="gallery__text">Соседи будут рады!</p>
-                  <button class="gallery__likes-button" type="button">Нравится: 666</button>
+                  <!-- <button class="gallery__likes-button" type="button">Нравится: 666</button> -->
+                  <span class="gallery__likes likes">
+                    Нравится: 666
+                    <button class="likes__button" type="button"></button>
+                  </span>
                 </div>
               </li>
 
               <li class="gallery__item">
                 <a href="#" class="gallery__picture">
-                  <img src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+                  <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
                 </a>
                 <div class="gallery__info">
-                  <h3 class="gallery__user-name">
+                  <p class="gallery__user-name">
                     Борис<span>(20 часов назад)</span>
-                  </h3>
+                  </p>
                   <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                  <button class="gallery__likes-button" type="button">Нравится: 215</button>
+                  <!-- <button class="gallery__likes-button" type="button">Нравится: 215</button> -->
+                  <span class="gallery__likes likes">
+                    Нравится: 215
+                    <button class="likes__button" type="button"></button>
+                  </span>
                 </div>
               </li>
 
               <li class="gallery__item">
                 <a href="#" class="gallery__picture">
-                  <img src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+                  <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
                 </a>
                 <div class="gallery__info">
-                  <h3 class="gallery__user-name">
+                  <p class="gallery__user-name">
                     Сергей<span>(25 часов назад)</span>
-                  </h3>
+                  </p>
                   <p class="gallery__text">Самая кубанская в мире!</p>
-                  <button class="gallery__likes-button" type="button">Нравится: 4</button>
+                  <!-- <button class="gallery__likes-button" type="button">Нравится: 4</button> -->
+                  <span class="gallery__likes likes">
+                    Нравится: 4
+                    <button class="likes__button" type="button"></button>
+                  </span>
                 </div>
               </li>
 
               <li class="gallery__item">
                 <a href="#" class="gallery__picture">
-                  <img src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+                  <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
                 </a>
                 <div class="gallery__info">
-                  <h3 class="gallery__user-name">
+                  <p class="gallery__user-name">
                     Максим<span>(40 часов назад)</span>
-                  </h3>
+                  </p>
                   <p class="gallery__text">Где снег-то?</p>
-                  <button class="gallery__likes-button" type="button">Нравится: 150</button>
+                  <!-- <button class="gallery__likes-button" type="button">Нравится: 150</button> -->
+                  <span class="gallery__likes likes">
+                    Нравится: 150
+                    <button class=" likes__button" type="button"></button>
+                  </span>
                 </div>
               </li>
 
               <li class="gallery__item">
                 <a href="#" class="gallery__picture">
-                  <img src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+                  <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
                 </a>
                 <div class="gallery__info">
-                  <h3 class="gallery__user-name">
+                  <p class="gallery__user-name">
                     Надежда<span>(45 часов назад)</span>
-                  </h3>
+                  </p>
                   <p class="gallery__text">Всем GM и взаимные лайки!</p>
-                  <button class="gallery__likes-button" type="button">Нравится: 2560</button>
+                  <!-- <button class="gallery__likes-button" type="button">Нравится: 2560</button> -->
+                  <span class="gallery__likes likes">
+                    Нравится: 256
+                    <button class=" likes__button" type="button"></button>
+                  </span>
                 </div>
               </li>
             </ul>
@@ -151,9 +183,9 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
-          <img src="../img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink Logo">
+          <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink Logo">
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">

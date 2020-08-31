@@ -2,10 +2,6 @@
   background-color: $dark-blue-color;
 }
 
-.page-header__wrapper {
-  margin: 0 auto;
-}
-
 .page-header__logo {
   width: 74px;
   height: 23px;
@@ -13,15 +9,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    width: $tablet-width;
+  .page-header__wrapper {
+    // width: $tablet-width;
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header__wrapper {
     display: flex;
-    width: $desktop-width;
+    justify-content: space-between;
   }
 }
