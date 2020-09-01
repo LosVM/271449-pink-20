@@ -2,18 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header__wrapper container">
       <a>
-        <img class="page-header__logo" src="../img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink logo">
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Pink logo">
       </a>
 
       <nav class="main-nav">
         <button class="main-nav__toggle">
-          <img src="../img/icon-menu-burger.svg" width="50" height="24" alt="Burger menu">
+          <img src="img/icon-menu-burger.svg" width="50" height="24" alt="Burger menu">
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -40,36 +42,37 @@
           </ul>
         </div>
       </nav>
+    </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Pink - приложение для обработки фотографий</h1>
 
       <section class="intro">
-        <div class="intro__wrapper">
+        <div class="intro__wrapper container">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
 
           <div class="intro__image">
-            <img src="../img/iphone-hand-mobile@1x.png" width="250" height="286" alt="Изображение телефона">
+            <img class="intro__picture" src="img/iphone-hand-mobile@1x.png" width="250" height="286" alt="Изображение телефона">
           </div>
-          <a href="https://www.apple.com/ru/ios/app-store/" class="intro__download-link">Скачать приложение</a>
+          <a href="https://www.apple.com/ru/ios/app-store/" class="intro__link"><span>Скачать приложение</span></a>
           <ul class="intro__list">
             <li class="intro__item intro__item--ios">
               <a href="https://www.apple.com/ru/ios/app-store/">
                 <span class="visually-hidden">IOS</span>
-                <img src="../img/logo-apple.svg" width="47" height="58" alt="IOS">
+                <img src="img/logo-apple.svg" width="47" height="58" alt="IOS">
               </a>
             </li>
             <li class="intro__item intro__item--android">
               <a href="https://play.google.com/store">
                 <span class="visually-hidden">Android</span>
-                <img src="../img/logo-android.svg" width="43" height="47" alt="Android">
+                <img src="img/logo-android.svg" width="43" height="47" alt="Android">
               </a>
               </li>
             <li class="intro__item intro__item--windows">
               <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
                 <span class="visually-hidden">Windows</span>
-                <img src="../img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
+                <img src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
               </a>
             </li>
           </ul>
@@ -80,31 +83,46 @@
       <section class="features">
         <h2 class="visually-hidden">Особенности нашего приложения</h2>
 
-        <div class="features__wrapper">
+        <div class="features__wrapper container">
           <p class="features__slogan">Устали от серости мегаполиса?</p>
           <p class="features__offer">Нам есть, что вам предложить!</p>
+          <div class="features__content">
           <ul class="features__list">
-            <li class="features__item">
+            <li class="features__item features__item--mood">
+              <img class="features__picture" src="img/iphone-screen-1-desktop@1x.png" width="165" height="294" alt="mood picture">
               <h3 class="features__title">Поднимает настроение</h3>
               <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--world">
+              <img class="features__picture" src="img/iphone-screen-2-desktop@1x.png" width="240" height="382" alt="world picture">
               <h3 class="features__title">Меняет мир вокруг</h3>
               <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--friends">
+              <img class="features__picture" src="img/iphone-screen-3-desktop@1x.png" width="240" height="382" alt="friends picture">
               <h3 class="features__title">Заводит новых друзей</h3>
               <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="features__image" src="../img/iphone-screen-mobile@1x.png" height="320" width="157"  alt="Телефон со смайликом">
+          <div class="features__image">
+            <img src="img/iphone-screen-mobile@1x.png" height="320" width="157"  alt="Телефон со смайликом">
+          </div>
+        </div>
+        <div class="features__fact fact">
+          <img class="fact__image" src="img/icon-timer.svg" width="238" height="250" alt="Таймер">
+          <div class="fact__info">
+            <h3 class="fact__title">Эффект на 24 часа!</h3>
+            <p class="fact__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="fact__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
         </div>
       </section>
-
+      <!--
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
 
-        <div class="reviews__wrapper slider">
+        <div class="reviews__wrapper slider container">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <div class="reviews__author-info">
@@ -214,12 +232,13 @@
         </div>
         <inframe></inframe>
       </section>
+       -->
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
-          <img src="../img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink Logo">
+          <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Pink Logo">
         </a>
         <ul class="page-footer__social social">
           <li class="social__item">

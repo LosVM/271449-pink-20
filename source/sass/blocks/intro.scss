@@ -2,7 +2,8 @@
   background-color: $intro-dark-bg;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 405px;
+  background-size: 100% 415px;
+  // background: cover;
   color: $white-color;
   text-align: center;
 }
@@ -14,7 +15,7 @@
 
 .intro__title {
   margin: 0;
-  padding: 29px 25px 34px 25px;
+  padding: 29px 25px 34px 45px;
   font-weight: 300;
   font-size: 24px;
   text-align: center;
@@ -25,7 +26,8 @@
   text-align: left;
 }
 
-.intro__download-link {
+.intro__link {
+  width: 222px;
   padding: 21px 39px;
   margin-bottom: 32px;
   color: $white-color;
@@ -50,4 +52,60 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+  z-index: 2;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .intro__wrapper {
+    position: relative;
+  }
+
+  .intro__title {
+    width: 200px;
+    font-size: 40px;
+  }
+
+  .intro__image {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+  }
+
+  .intro__picture {
+    width: 450px;
+    height: 470px;
+  }
+
+  .intro__link {
+    z-index: 2;
+  }
+
+  .intro__list {
+    width: 210px;
+    z-index: 2;
+  }
+
+  .intro__text {
+    width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .intro__text {
+    padding-bottom: 130px;
+  }
+
+  .intro__picture {
+    height: 600px;
+  }
 }

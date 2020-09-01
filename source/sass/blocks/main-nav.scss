@@ -32,3 +32,27 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 630px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    padding-right: 0;
+
+    a {
+      font-weight: 400;
+      text-transform: none;
+    }
+  }
+}

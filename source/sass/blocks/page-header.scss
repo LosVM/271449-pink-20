@@ -2,12 +2,22 @@
   background-color: $dark-blue-color;
 }
 
-.page-header__wrapper {
-  margin: 0 auto;
-}
-
 .page-header__logo {
   width: 74px;
   height: 23px;
   padding: 21px 0 21px 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    // width: $tablet-width;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
