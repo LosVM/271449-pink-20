@@ -123,6 +123,7 @@
   }
 
   .fact__image::before {
+    display: block;
     content: "24";
     position: absolute;
     top: 10px;

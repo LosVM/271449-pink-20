@@ -1,0 +1,297 @@
+.upload__title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 38px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.upload__wrapper {
+  background-color: $gray-color;
+}
+
+.upload__image {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 42px;
+
+  img {
+    width: 280px;
+    height: 374px;
+  }
+}
+
+.upload__list {
+  @include list-reset;
+  padding: 0 69px 114px 57px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 194px;
+}
+
+.upload__item {
+  position: relative;
+
+  &:first-child {
+    fill: $pink-color;
+  }
+
+  svg {
+    opacity: 0.3;
+  }
+}
+
+.upload__filter {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+  display: none;
+
+  button {
+    display: block;
+    position: absolute;
+    border: 2px solid $pink-color;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    top: -6px;
+    right: 30px;
+  }
+
+  &--crop {
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: -20px;
+  }
+}
+
+.upload__buttons {
+  padding-bottom: 41px;
+}
+
+.upload__submit,
+.upload__cancel {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+
+.upload__submit {
+  margin-bottom: 12px;
+  padding: 15px 90px;
+  color: $pink-color;
+  border: 3px solid $pink-color;
+  border-radius: 30px;
+}
+
+.upload__cancel {
+  padding: 15px 103px;
+  border: 3px solid $dark-blue-color;
+  opacity: 0.1;
+}
+
+@media (min-width: $tablet-width) {
+  .upload__form {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 12px;
+  }
+
+  .upload__image {
+    img {
+      width: 300px;
+      height: 400px;
+    }
+  }
+
+  .upload__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 45px;
+    padding-left: 0;
+  }
+
+  .upload__item {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: $pink-color;
+      opacity: 1;
+    }
+
+    &:first-child {
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &:nth-child(2) {
+      svg {
+        width: 24px;
+        height: 22px;
+      }
+    }
+
+    &:nth-child(3) {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .upload__filter {
+    display: block;
+    margin-left: 30px;
+    width: 202px;
+
+    &--crop {
+      position: static;
+
+      button {
+        top: 3px;
+        right: 40px;
+      }
+    }
+
+    &--fill {
+      button {
+        left: 30px;
+      }
+    }
+
+    &--contrast {
+      button {
+        left: 120px;
+      }
+    }
+  }
+
+  .upload__submit,
+  .upload__cancel {
+    width: 260px;
+  }
+
+  .upload__submit {
+    margin-bottom: 24px;
+    padding: 15px 80px;
+  }
+
+  .upload__cancel {
+    padding: 15px 93px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload__wrapper {
+    background-color: $white-color;
+  }
+
+  .upload__form {
+    background-color: $gray-color;
+  }
+
+  .upload__image {
+    padding-left: 80px;
+  }
+
+  .upload__range-group {
+    width: 380px;
+    padding-right: 80px;
+  }
+
+  .upload__list {
+    padding-bottom: 130px;
+    margin-right: 0;
+  }
+
+  .upload__item {
+    padding-bottom: 29px;
+
+    &:first-child {
+      svg {
+        width: 44px;
+        height: 44px;
+      }
+
+      button {
+        top: 14px;
+      }
+    }
+
+    &:nth-child(2) {
+      svg {
+        width: 48px;
+        height: 43px;
+      }
+    }
+
+    &:nth-child(3) {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .upload__filter {
+    width: 288px;
+
+    &--crop {
+      position: static;
+
+      button {
+        top: 3px;
+        right: 40px;
+      }
+    }
+
+    &--fill {
+      button {
+        left: 30px;
+      }
+    }
+
+    &--contrast {
+      button {
+        left: 120px;
+      }
+    }
+  }
+
+  .upload__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+
+  .upload__submit,
+  .upload__cancel {
+    width: 183px;
+    margin: 0;
+  }
+
+  .upload__submit {
+    padding: 15px 42px;
+  }
+
+  .upload__cancel {
+    padding: 15px 55px;
+  }
+}
